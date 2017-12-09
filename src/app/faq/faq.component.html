@@ -1,3 +1,27 @@
-<p>
-  faq works!
-</p>
+<script>
+
+  var faqs = ['something more' , 'something we have ' , 'something we have more' , 'why looke for fucking shti'];
+
+  var fucking_shit = ['we have nothing bro do u know' , 'in the code who is the best u know '];
+</script>
+
+<div class="faq">
+    <div class="container">
+      <section class="section">
+        <h1 class="title">FAQ</h1>
+        <h2 class="subtitle is-4">Lorem ipsum and all of that jaaz.</h2>
+        <div class="columns" >
+          <div class="column" *ngFor='let faq of faqs ? faqs.slice(0,10) : []'>
+            <div class="card">
+              <div class="card-content">
+                <p style="font-size:20px;font-weight:bold">{{faq.title}}</p>
+                <p class="answer">{{faq.body}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  
